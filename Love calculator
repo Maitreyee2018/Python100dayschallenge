@@ -1,0 +1,35 @@
+# 🚨 Don't change the code below 👇
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+#Calculate the "true" individual char count in the name 1 and name2
+t=name1.lower().count("t")+name2.lower().count("t")
+r=name1.lower().count("r")+name2.lower().count("r")
+u=name1.lower().count("u")+name2.lower().count("u")
+e=name1.lower().count("e")+name2.lower().count("e")
+true=t+r+u+e
+#Calculate the "love" individual char count in the name 1 and name2
+l=name1.lower().count("l")+name2.lower().count("l")
+o=name1.lower().count("o")+name2.lower().count("o")
+v=name1.lower().count("v")+name2.lower().count("v")
+e=name1.lower().count("e")+name2.lower().count("e")
+love=l+o+v+e
+#Calculate the final score = true char count (1st digit) + love char count (2nd digit)
+final_score = int(str(true)+str(love))
+
+#Add the logic of love prediction based on final score
+if final_score < 10 or final_score > 90:
+    print(f"Your score is {final_score}, you go together like coke and mentos.")
+elif  final_score >=40 and final_score <=50:
+    print(f"Your score is {final_score}, you are alright together.")
+else:
+    print(f"Your score is {final_score}.")    
+
+
+
+
+
+
