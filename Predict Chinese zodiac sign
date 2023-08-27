@@ -1,0 +1,42 @@
+#Calculate Chinese Zodiac sign
+
+def calc_chinese_zodiac():
+    if year_of_birth %12 ==0:
+        print("Your are in Monkey sign")
+    elif    year_of_birth %12 ==1:
+        print("Your are in Rooster sign")
+    elif    year_of_birth %12 ==2:
+        print("Your are in Dog sign")
+    elif    year_of_birth %12 ==3:
+        print("Your are in Pig sign")
+    elif    year_of_birth %12 ==4:
+        print("Your are in Rat sign")
+    elif    year_of_birth %12 ==5:
+        print("Your are in Ox sign")
+    elif    year_of_birth %12 ==6:
+        print("Your are in Tiger sign")
+    elif    year_of_birth %12 ==7:
+        print("Your are in Rabbit sign")
+    elif    year_of_birth %12 ==8:
+        print("Your are in Dragon sign")
+    elif    year_of_birth %12 ==9:
+        print("Your are in Snake sign")
+    elif    year_of_birth %12 ==10:
+        print("Your are in Horse sign")
+    elif    year_of_birth %12 ==11:
+        print("Your are in Sheep sign")
+
+play_game=True
+
+while play_game:
+    year_of_birth=int(input("Enter your year of birth(YYYY)"))
+    print(f"Your year of birth is:{year_of_birth}")
+    calc_chinese_zodiac()
+    x=input("Do you want to continue. Type Y/N:")
+    if x=='N' or x=='n':
+        play_game=False
+    elif x=='Y' or x=='y':
+        continue
+    else:
+        play_game=False
+        print("Invalid selection made")
